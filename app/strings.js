@@ -10,6 +10,8 @@ exports.stringsAnswers = {
   },
 
   reverseString: function(str) {
-
+    // let string = 'abcdef abcde abc def';
+    // console.log('string split: ', string.split('').reverse().join(''));
+    return str.split('').reverse().join('');
   }
 };

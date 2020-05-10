@@ -9,18 +9,20 @@ exports = typeof window === 'undefined' ? global : window;
 
 exports.bestPracticesAnswers = {
   globals: function() {
-    myObject = {
+    const myObject = {
       name: 'Jory'
     };
-
     return myObject;
   },
 
   parseInt: function(num) {
+    // const test = this.parseInt('12');
+    // console.log('test: ', test);
+    // console.log('123FU');
     return parseInt(num);
   },
 
   identity: function(val1, val2) {
-
+    return val1 === val2;
   }
 };

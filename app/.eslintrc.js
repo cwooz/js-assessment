@@ -1,13 +1,16 @@
 module.exports = {
     "env": {
         "browser": true,
-        "node": true
+        "node": true,
+        "commonjs": true,
+        "es6": true
     },
     "globals": {
       "exports": false,
     },
     "extends": "eslint:recommended",
     "rules": {
+        "parserOptions": { "ecmaVersion": 6 },
         "accessor-pairs": "error",
         "array-callback-return": "error",
         "arrow-body-style": "error",
