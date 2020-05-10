@@ -2,11 +2,32 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Mocha Tests</title>
+  <title>js-assessment</title>
   <link rel="stylesheet" href="/node_modules/mocha/mocha.css" />
   <style>
     body {
-      background: ivory !important;
+      /* background: honeydew !important; */
+      background: beige !important;
+    }
+    h1 {
+      font-size: 1.5em !important;
+    }
+    #mocha .test pre {
+      font-size: 13px;
+      color: #f14b4b !important;
+    }
+    .test.fail h2 {
+      margin: 3px 0 !important;
+      font-size: 14px !important;
+      font-style: italic !important;
+      font-weight: bold !important;
+      color: #f14b4b !important;
+    }
+    #mocha .test.fail::before {
+      margin-top: 3px;
+      margin-bottom: 3px;
+      font-size: 14px !important;
+      color: #f14b4b !important;
     }
   </style>
   <link href="../public/favicon.png" rel="shortcut icon" type="image/x-icon">
