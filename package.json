@@ -3,10 +3,9 @@
   "name": "js-assessment",
   "description": "A test-driven assessment of JavaScript skills",
   "version": "0.3.0",
-  "homepage": "http://rmurphey.com",
   "repository": {
     "type": "git",
-    "url": "git://github.com/rmurphey/js-assessment.git"
+    "url": "git://github.com/cwooz/js-assessment.git"
   },
   "engines": {
     "node": "0.12.x"
@@ -26,9 +25,6 @@
     "test": "mocha -R spec 'tests/app'",
     "lint": "eslint --quiet tests/app app",
     "lint-warn": "eslint tests/app app"
-  },
-  "bugs": {
-    "url": "https://github.com/rmurphey/js-assessment/issues"
   },
   "private": true,
   "devDependencies": {
