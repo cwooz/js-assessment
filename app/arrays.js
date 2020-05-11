@@ -15,20 +15,23 @@ exports.arraysAnswers = {
   },
 
   remove: function(arr, item) {
-    // array = [ 1, 2, 3, 4 ];
-    // const result = array.filter(num => num !== 2);
-    // console.log('test', result);
     const solution_03 = arr.filter(num => num !== item);
     return solution_03
   },
 
   removeWithoutCopy: function(arr, item) {
-    array = [ 1, 2, 3, 4 ];
+    // --- MORE RESEARCH --- //
+    // array = [ 1, 2, 3, 4 ];
 
-    const result = arr.splice(0, item);
-    // console.log('test', result);
+    for( var i = 0; i < arr.length; i++){
+      if ( arr[i] === item) {
+        arr.splice(i, 1);
+        i--;
+      }
+    }
+    // console.log('test', array);
 
-    return result;
+    return arr;
   },
 
   append: function(arr, item) {
